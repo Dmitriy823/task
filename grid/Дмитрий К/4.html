@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .container {
+            display: flex;
+            padding-left: 15%;
+            flex-flow: column;
+        }
+        .images {
+            width: 300px;
+            height: 200px;
+            display: flex;    
+        }
+        .flex:nth-child(2n+1) .images{
+            order: 1;
+        }
+        .images img{
+            width: 100%;
+            object-fit: cover;
+            transition: transform 1s ease-in-out;
+        }
+        span {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-transform: uppercase;
+            color: #2e2e2e;
+            margin: auto;
+        }
+        .content:hover {
+           
+        }
+        .flex {
+            display: flex;
+            transition: filter 0.3s ease-in-out;
+            /* transition: .3 ease-in-out; */
+           
+        }
+        .text{
+            width: 300px;
+            background-color: #ccc;
+            display: flex;
+           
+        }
+        .flex:hover{
+            filter: brightness(.5);
+            /* transition: .3 ease-in-out;
+            transition-timing-function: linear; */
+        }
+        .flex:hover img{
+            transform: scale(1.5) ;
+            transition: 1s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flex">
+            <div class="images">
+                <img src="https://source.unsplash.com/collection/1103079/800x600" alt="картинка">
+            </div>
+            <div class="text">
+                <span>Lorem, ipsum.</span>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="images">
+                <img src="https://source.unsplash.com/collection/1103079/800x600" alt="картинка">
+            </div>
+            <div class="text">
+                <span>Lorem, ipsum.</span>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="images">
+                <img src="https://source.unsplash.com/collection/1103079/800x600" alt="картинка">
+            </div>
+            <div class="text">
+                <span>Lorem, ipsum.</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

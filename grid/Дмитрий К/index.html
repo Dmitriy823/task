@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body {
+            background-color: #cae9f9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 18pt;
+        }
+        div {
+            background-color: #fff;
+        }
+        .grid-container {
+            display: inline-grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto auto;
+            grid-gap: 25px;
+            background-color: inherit;
+        }
+        .text {
+            padding: 25px;
+        }
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item-1">
+            <img src="img/350x150.png" alt="350x150">
+            <div class="text">
+                <h4>Title</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+        <div class="item-2">
+            <img src="img/350x100.png" alt="350x100">
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, facere.</p>
+            </div>
+        </div>
+        <div class="item-3">
+            <img src="img/350x100.png" alt="350x100">
+            <div class="text">
+                <h4>A little longer title</h4>
+                <p>Lorem, ipsum dolor.</p>
+            </div>
+        </div>
+        <div class="item-4">
+            <img src="img/350x220.png" alt="350x220">
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+        <div class="item-5">
+            <img src="img/350x230.png" alt="350x230">
+            <div class="text">
+                <h4>The title</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptatum saepe commodi dolores quidem at!</p>
+            </div>
+        </div>
+        <div class="item-6">
+            <img src="img/350x350.png" alt="350x350">
+            <div class="text">
+                <h4>A itle</h4>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+        </div>
+        <div class="item-7">
+            <img src="img/350x100.png" alt="350x100">
+            <div class="text">
+                <h4>Title</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            </div>
+        </div>
+        <div class="item-8">
+            <img src="img/350x150.png" alt="350x150">
+            <div class="text">
+                <p>Lorem ipsum dolor sit.</p>
+            </div>
+        </div>
+        <div class="item-9">
+            <img src="img/350x150.png" alt="350x150">
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Структура сайта</title>
+    <style>
+
+        body {
+            background-color: rgb(247, 242, 242);
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            font-size: 10px;            
+        }
+
+        article {
+            min-width: 800px;
+            width: auto;            
+        }
+        
+        .block-text1, .block-text2 {
+            width: 400px;            
+            color: rgb(0, 0, 0);
+            float: left;
+            padding: 0 10px 5px 20px;            
+        }       
+
+        .block-text2 { 
+            margin-top: -260px;
+            clear: left;
+        }
+
+        .block-img {
+            display: inline-block;
+            width: 200px;
+            margin: 10px 10px;            
+        }
+
+        .block-img1, .block-img2 {
+            width: 100%;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 10px;
+            background-color: rgb(3, 61, 100);
+            color: rgb(255, 255, 255);
+            text-align: right;
+        }        
+
+        img {
+            width: 100%;
+        }
+
+        .text {
+            padding: 0 15px 0 15px;
+        }
+
+    @media screen and (min-width: 600px) and (max-width: 800px) {
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(247, 242, 242);
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            font-size: 10px;            
+        }
+        
+        article {
+            min-width: 600px; 
+            max-width: 800px;
+            width: auto;
+            margin: 20px 20px;
+        }
+        
+        .block-text1, .block-text2 {
+            width: 490px;
+            color: rgb(0, 0, 0);            
+        }
+
+        .block-text2 { 
+            margin-top: 0;
+        }
+
+        .block-img {
+            width: 460px;
+            margin: 10px 0 20px 20px;
+        }
+
+        .block-img1, .block-img2 {
+            display: inline-block;
+            width: 225px;
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: rgb(3, 61, 100);
+            color: rgb(255, 255, 255);
+            text-align: right;
+        }
+
+        .block-img1 {
+            margin-right: 7px;
+            vertical-align: 25px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .text {
+            padding: 0 15px 0 20px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(247, 242, 242);
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            font-size: 10px;            
+        }
+        
+        article { 
+            max-width: 600px;
+            width: auto;
+            margin: 20px 20px;
+        }
+        
+        .block-text1, .block-text2 {
+            display: block;
+            width: 355px;
+            color: rgb(0, 0, 0);            
+        }
+
+        .block-text2 { 
+            margin-top: 0;
+        }
+
+        .block-img {
+            display: block;
+            width: 330px;
+        }
+
+        .block-img1, .block-img2 {
+            display: block;
+            width: 100%;
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: rgb(3, 61, 100);
+            color: rgb(255, 255, 255);
+            text-align: right;
+            margin-bottom: 20px;
+        }
+
+        .block-img1 {
+            margin-top: 20px;
+            vertical-align: 25px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .text {
+            padding: 0 15px 0 20px;
+        }
+    }
+
+    </style>
+</head>
+
+<body>
+    <article>
+
+        <div class="block-text1">
+            <h2>Cat</h2>
+            <p>The cat (Felis catus) is a small carnivorous mammal. It is the only domesticated species in the family Felidae and often referred to as the domestic cat to distinguish it from wild members of the family. The cat is either a house cat, kept as a pet, or a feral cat, freely ranging and avoiding human contact.[5] A house cat is valued by humans for companionship and for its ability to hunt rodents. About 60 cat breeds are recognized by various cat registries.</p>
+        </div>
+
+        <div class="block-img">
+            <div class="block-img1">
+                <img src="icons_hw/cat1.jpg" alt="cat1">
+                <p class="text">A Tabby cat in snowy weather</p>
+            </div>
+    
+            <div class="block-img2">
+                <img src="icons_hw/cat2.jpg" alt="cat2">
+                <p class="text">The hooked papillae on a cat's tongue act like a hairbrush to help clean and detangle fur.</p>
+            </div>
+        </div>
+
+        <div class="block-text2">
+            <p>Cats are similar in anatomy to the other felid species, with a strong flexible body, quick reflexes, sharp teeth and retractable claws adapted to killing small prey. They are predators who are most active at dawn and dusk (crepuscular). Cats can hear sounds too faint or too high in frequency for human ears, such as those made by mice and other small animals. Compared to humans, they see better in the dark (they see in near total darkness) and have a better sense of smell, but poorer color vision. Cats, despite being solitary hunters, are a social species. Cat communication includes the use of vocalizations including mewing, purring, trilling, hissing, growling and grunting as well as cat-specific body language.[7] Cats also communicate by secreting and perceiving pheromones.</p>
+            <p>Female domestic cats can have kittens from spring to late autumn, with litter sizes ranging from two to five kittens. Domestic cats can be bred and shown as registered pedigreed cats, a hobby known as cat fancy. Failure to control the breeding of pet cats by spaying and neutering, as well as abandonment of pets, has resulted in large numbers of feral cats worldwide, contributing to the extinction of entire bird species, and evoking population control.</p>
+        </div>
+
+    </article>
+</body>
+
+</html>
